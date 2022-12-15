@@ -3,7 +3,7 @@ abstract class Human {
   // constructor
   Human({this.name, this.dateOfBirth, this.gender}); //constructor
 
-// variables
+//define variables
   String? name;
 
   String? gender;
@@ -11,14 +11,14 @@ abstract class Human {
   String? dateOfBirth;
   String? _nationalNumber; // private variable
 
-// getter & setter
+// getter & setter to the private variable
   String get nationalNumber => _nationalNumber!;
 
   set nationalNumber(String nationalID) {
     _nationalNumber = nationalID;
   }
 
-// abstract methods
+// abstract void methods
   void eat();
 
   void drink();
